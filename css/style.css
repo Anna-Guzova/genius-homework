@@ -639,6 +639,8 @@ address {
   top: 50px;
   right: 50px;
   padding: 20px 0;
+  width: 32px;
+  height: 32px;
 }
 
 .pmodal {
