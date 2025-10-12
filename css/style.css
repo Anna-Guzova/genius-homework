@@ -12,9 +12,12 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--beauty-landing-2-c1);
   font-weight: 400;
+  margin: 0;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 h1,
@@ -342,6 +345,13 @@ ul {
   display: flex;
   gap: 56px;
 }
+.wave-bg {
+  background-image: url('../imagers/background-second.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 1400px;
+  padding-top: 80px;
+}
 .whywe {
   color: var(--beauty-landing-2-s2);
 }
@@ -380,6 +390,10 @@ ul {
   color: var(--beauty-landing-2-background);
   display: flex;
   gap: 16px;
+  padding: 32px 77px;
+  font-size: 22px;
+  line-height: 118%;
+  margin: 0;
 }
 .carusel-container {
   display: flex;
@@ -496,6 +510,9 @@ ul {
 .form-field-find {
   margin-bottom: 16px;
 }
+.map {
+  border-radius: 32px;
+}
 
 /* footer */
 .link-footer {
@@ -550,6 +567,7 @@ address {
 .nav-container {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   text-align: center;
   gap: 16px;
   width: 203px;
