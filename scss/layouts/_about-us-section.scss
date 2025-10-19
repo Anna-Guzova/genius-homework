@@ -1,0 +1,42 @@
+.about-us-section {
+  font-size: 22px;
+
+  &__container {
+    display: flex;
+    position: relative;
+    gap: 32px;
+  }
+
+  &__text {
+    display: flex;
+    max-width: 709px;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 22px;
+  }
+
+  &__span {
+    font-weight: 600;
+  }
+
+  &__image {
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    flex-direction: column;
+    position: relative;
+    top: -50px;
+  }
+
+  &__image-first {
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: flex-start;
+  }
+
+  &__image-second {
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,67 @@
+.footer {
+  background: var(--beauty-landing-2-c1);
+  font-size: 16px;
+  background-image: url(../imagers/background-footer.png);
+  padding: 56px 0;
+  position: relative;
+
+  &__container {
+    display: flex;
+    gap: 160px;
+    text-align: center;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    gap: 16px;
+    width: 203px;
+    padding: 0;
+  }
+
+  &__address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 16px;
+    padding: 0;
+  }
+
+  &__data {
+    color: var(--beauty-landing-2-s5);
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 16px;
+    white-space: nowrap;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: auto;
+  }
+
+  &__icon {
+    display: flex;
+    gap: 24px;
+    fill: var(--beauty-landing-2-background);
+  }
+}

@@ -1,0 +1,95 @@
+.star-l {
+  fill: var(--beauty-landing-2-c6);
+  position: absolute;
+  top: 336px;
+  right: 300px;
+  animation: spinl 2s infinite ease-in-out;
+}
+
+@keyframes spinl {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-c6);
+  }
+  25% {
+    fill: var(--beauty-landing-2-c1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0.6;
+    fill: var(--beauty-landing-2-c6);
+  }
+  75% {
+    fill: var(--beauty-landing-2-s2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-c6);
+  }
+}
+
+.star-m {
+  fill: var(--beauty-landing-2-s2);
+  position: absolute;
+  top: 32px;
+  right: 0;
+  animation: spinm 2s infinite ease-in-out;
+}
+
+@keyframes spinm {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-s2);
+  }
+  25% {
+    fill: var(--beauty-landing-2-c1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0.6;
+    fill: var(--beauty-landing-2-s2);
+  }
+  75% {
+    fill: var(--beauty-landing-2-c1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-s2);
+  }
+}
+
+.star-s {
+  fill: var(--beauty-landing-2-s5);
+  position: absolute;
+  top: 270px;
+  right: 6px;
+  animation: spins 2s infinite ease-in-out;
+}
+
+@keyframes spins {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-s5);
+  }
+  25% {
+    fill: var(--beauty-landing-2-c3);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0.6;
+    fill: var(--beauty-landing-2-s5);
+  }
+  75% {
+    fill: var(--beauty-landing-2-c3);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    fill: var(--beauty-landing-2-s5);
+  }
+}

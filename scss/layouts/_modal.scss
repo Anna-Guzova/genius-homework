@@ -1,0 +1,66 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 730px;
+  max-height: 680px;
+  padding: 42px 144px;
+  background-color: var(--beauty-landing-2-c1);
+  background-image: url('../imagers/background-form.png');
+  border-radius: 48px;
+  overflow: auto;
+  color: var(--beauty-landing-2-background);
+  text-align: center;
+
+  &__title {
+    color: var(--beauty-landing-2-background);
+    margin-bottom: 40px;
+    font-size: 64px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 20px 6px;
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: Roboto;
+    fill: transparent;
+    background-color: transparent;
+    stroke: var(--beauty-landing-2-background);
+    border: none;
+    cursor: pointer;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+}

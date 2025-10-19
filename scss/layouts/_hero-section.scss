@@ -1,0 +1,22 @@
+.hero-section {
+  height: 100vh;
+  background-image: url(../imagers/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 133px 0 0 0;
+  margin: 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    margin-left: 100px;
+    position: absolute;
+  }
+
+  &__text {
+    color: var(--beauty-landing-2-c3);
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,33 @@
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1.4;
+
+  &__container {
+    display: flex;
+    gap: 56px;
+    margin-top: 48px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 20px;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+    background: var(--beauty-landing-2-background);
+    border-radius: 32px;
+    width: 316px;
+    height: 181px;
+    padding: 24px 32px;
+    line-height: 1.3;
+    font-size: 18px;
+  }
+  &__icon {
+    fill: var(--beauty-landing-2-s2);
+  }
+}
