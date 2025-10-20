@@ -5,11 +5,11 @@
   top: 0;
   bottom: 0;
   background-color: var(--beauty-landing-2-background);
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   z-index: 1;
 
   &.is-open {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   &__button {
