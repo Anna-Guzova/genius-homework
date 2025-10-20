@@ -1,6 +1,4 @@
 .header {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.25);
   color: transparent;
   position: absolute;
   top: 0;
@@ -8,6 +6,11 @@
   padding-top: 32px;
   padding-bottom: 32px;
   width: 100%;
+
+  @media screen and (min-width: $bp-desktop) {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.25);
+  }
 
   &__container {
     display: flex;
@@ -23,20 +26,39 @@
   }
 
   &__menu {
-    display: flex;
-    gap: 56px;
-    flex-grow: 1;
-    justify-content: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 56px;
+      flex-grow: 1;
+      justify-content: center;
+      padding-left: 200px;
+      padding-right: 200px;
+    }
   }
 
   &__icon-container {
-    display: flex;
-    gap: 32px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 32px;
+    }
   }
 
   &__icon {
     fill: var(--beauty-landing-2-c1);
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    fill: var(--beauty-landing-2-background);
+    padding: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,51 @@
+.mobile-menu {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--beauty-landing-2-background);
+  transform: translateY(-100%);
+  z-index: 1;
+
+  &.is-open {
+    transform: translateY(0);
+  }
+
+  &__button {
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    fill: transparent;
+    background-color: transparent;
+    top: 26px;
+    right: 40px;
+  }
+
+  &__svg {
+    stroke-width: 2px;
+    stroke: var(--beauty-landing-2-c1);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__icon {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__logo {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+}

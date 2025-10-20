@@ -1,22 +1,90 @@
 .hero-section {
   height: 100vh;
-  background-image: url(../imagers/background.png);
+  background-image: linear-gradient(
+      to right,
+      #fff 0%,
+      rgba(255, 255, 255, 0.78) 31.23%,
+      rgba(255, 255, 255, 0.2) 50.39%,
+      rgba(255, 255, 255, 0) 68.37%
+    ),
+    url(../imagers/background.png);
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  padding: 133px 0 0 0;
   margin: 0;
+  overflow: hidden;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 133px 0 0 0;
+    background-position: right top;
+    background-image: linear-gradient(
+        90deg,
+        #fff 0%,
+        rgba(255, 255, 255, 0.78) 31.23%,
+        rgba(255, 255, 255, 0.2) 50.39%,
+        rgba(255, 255, 255, 0) 68.37%
+      ),
+      url(../imagers/background.png);
+  }
 
   &__container {
     display: flex;
     flex-direction: column;
-    width: 530px;
-    margin-left: 100px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
     position: absolute;
+    padding-bottom: 50px;
+    bottom: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 530px;
+      margin-left: 100px;
+      top: 0;
+      text-align: left;
+    }
   }
 
   &__text {
     color: var(--beauty-landing-2-c3);
     font-size: 12px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-family: Play;
+    padding: 0;
+    text-transform: capitalize;
+    color: var(--beauty-landing-2-s2);
+    margin: 0;
+    font-size: 54px;
+    line-height: 85%;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 140px;
+      line-height: 81%;
+      padding-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__third-title {
+    font-weight: 400;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 238px;
+    height: 103px;
+    margin: 0 auto;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 14px;
+      margin: 0;
+    }
   }
 }

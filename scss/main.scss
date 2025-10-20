@@ -1,13 +1,14 @@
 @import './base';
 
+@import './utils/variables';
 @import './utils/texts';
 @import './utils/utils';
-@import './utils/variables';
 
 @import './components/button';
 @import './components/cards';
 @import './components/carousel-button';
 @import './components/links';
+@import './components/pagination';
 @import './components/procedures-card';
 @import './components/stars';
 
@@ -19,6 +20,8 @@
 @import './layouts/header';
 @import './layouts/hero-section';
 @import './layouts/modal';
+@import './layouts/mobile-menu';
 @import './layouts/procedures-section';
 @import './layouts/section';
+@import './layouts/wave-back';
 @import './layouts/why-we-section';

@@ -1,3 +1,7 @@
 section {
-  margin-top: 96px;
+  margin-top: 40px;
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-top: 96px;
+  }
 }

@@ -1,33 +1,60 @@
 .find-section {
-  margin-bottom: 96px;
-
   &__container {
     display: flex;
-    flex-direction: column;
     text-align: center;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 96px;
+    }
   }
 
   &__content {
     display: flex;
-    gap: 32px;
+    gap: 24px;
     justify-content: center;
-    margin-top: 48px;
+    margin-top: 24px;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 32px;
+      margin-top: 48px;
+    }
   }
 
   &__map {
-    border-radius: 32px;
+    border: none;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 605px;
+      height: 480px;
+      border-radius: 32px;
+    }
   }
 
   &__form {
-    max-width: 422px;
-    max-height: 482px;
-    padding: 48px 56px;
+    padding: 42px 24px;
+    max-width: 320px;
+    max-height: 430px;
+    width: 100%;
+    height: 100%;
     background-color: var(--beauty-landing-2-c1);
     background-image: url('../imagers/background-form.png');
     border-radius: 48px;
     overflow: auto;
     color: var(--beauty-landing-2-background);
-    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 422px;
+      max-height: 482px;
+      padding: 48px 56px;
+      margin: 0;
+    }
   }
 
   &__modal-field {

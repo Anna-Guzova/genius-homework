@@ -6,6 +6,15 @@
   animation: spinl 2s infinite ease-in-out;
 }
 
+.star-l-mobile {
+  position: absolute;
+  right: 23px;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
 @keyframes spinl {
   0% {
     transform: rotate(0deg) scale(1);

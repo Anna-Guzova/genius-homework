@@ -64,6 +64,59 @@
               </svg>
             </a>
           </div>
+          <button type="button" class="header__burger menu-btn-open">
+            <svg width="24" height="24">
+              <use href="./imagers/burger-sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="menu-btn-close mobile-menu__button" type="button">
+              <svg class="mobile-menu__svg" width="24" height="24">
+                <use href="./imagers/close-sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="container">
+              <a class="mobile-menu__logo" href="./index.html">
+                <img src="./imagers/logo.svg" alt="логотип салону краси" />
+              </a>
+              <div class="mobile-menu__container">
+                <ul class="mobile-menu__links">
+                  <li>
+                    <a class="link__header" href="#aboutus-section">Про нас</a>
+                  </li>
+                  <li>
+                    <a class="link__header" href="#whywe-section"> Чому ми</a>
+                  </li>
+                  <li>
+                    <a class="link__header" href="#procedures-section"
+                      >Наші процедури</a
+                    >
+                  </li>
+                  <li>
+                    <a class="link__header" href="#find-section">Контакти</a>
+                  </li>
+                </ul>
+
+                <div class="mobile-menu__icon">
+                  <a href="#">
+                    <svg class="header__icon" width="32" height="32">
+                      <use href="./imagers/sprite.svg#icon-telephone"></use>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg class="header__icon" width="32" height="32">
+                      <use href="./imagers/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg class="header__icon" width="32" height="32">
+                      <use href="./imagers/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -71,9 +124,9 @@
       <section class="hero-section">
         <div class="container">
           <div class="hero-section__container">
-            <h3>Косметологічна клініка</h3>
-            <h1 lang="en">Beauty zone</h1>
-            <div class="button__container">
+            <h3 class="hero-section__third-title">Косметологічна клініка</h3>
+            <h1 class="hero-section__title" lang="en">Beauty zone</h1>
+            <div class="hero-section__button">
               <button class="button modal-btn-open">Замовити дзвінок</button>
               <p class="hero-section__text">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
@@ -99,11 +152,9 @@
                 <span lang="en" class="about-us-section__span"
                   >beauty zone</span
                 >
-                ми гарантуємо найвищі стандарти якості <br />
-                та приємний сервіс. Наші косметологічні процедури та препарати
-                <br />
-                допоможуть вам підтримувати свою красу та молодість. <br />
-                З нами краса назавжди!
+                ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
+                косметологічні процедури та препарати допоможуть вам
+                підтримувати свою красу та молодість. З нами краса назавжди!
               </p>
             </div>
             <div class="about-us-section__image">
@@ -127,6 +178,9 @@
                 <use href="./imagers/sprite2.svg#icon-Star-s"></use>
               </svg>
             </div>
+            <svg class="star-l star-l-mobile" width="40" height="40">
+              <use href="./imagers/sprite2.svg#icon-Star-l"></use>
+            </svg>
           </div>
         </div>
       </section>
@@ -256,6 +310,11 @@
                     </article>
                   </li>
                 </ul>
+                <div class="pagination">
+                  <span class="pagination_button"></span>
+                  <span class="pagination_button"></span>
+                  <span class="pagination_button"></span>
+                </div>
               </div>
               <button class="carusel-button next" type="button">
                 <svg class="carusel-button__arrow" width="16" height="16">
@@ -277,8 +336,6 @@
               <iframe
                 class="find-section__map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73531.11649300948!2d30.564275347909632!3d50.47454541614706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e1!3m2!1suk!2sua!4v1757762979893!5m2!1suk!2sua"
-                width="605"
-                height="480"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
@@ -359,11 +416,11 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
-          <a href="./index.html">
+          <a class="footer__logo" href="./index.html">
             <img src="./imagers/logo.svg" alt="логотип салону краси" />
           </a>
-          <nav>
-            <ul class="footer__nav">
+          <nav class="footer__nav">
+            <ul class="footer__link">
               <li>
                 <a class="link__footer" href="#aboutus-section">Про нас</a>
               </li>
@@ -423,6 +480,23 @@
             <a href="#" target="_blank" class="link__footer"
               >Політика конфіденційності</a
             >
+            <div class="footer__icon footer__mobile-icon">
+              <a href="#">
+                <svg width="32" height="32">
+                  <use href="./imagers/sprite.svg#icon-telephone"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg width="32" height="32">
+                  <use href="./imagers/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg width="32" height="32">
+                  <use href="./imagers/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </div>
             <p class="footer__data">&copy; 2022 Дані захищені</p>
             <img
               class="footer__img"
@@ -505,6 +579,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/format-card.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
