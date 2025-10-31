@@ -50,7 +50,6 @@
     text-align: center;
     justify-content: center;
     position: absolute;
-    height: auto;
     bottom: 0;
     top: 0;
     left: 0;
@@ -58,7 +57,7 @@
 
     @media screen and (min-width: $bp-desktop) {
       width: 530px;
-      margin-left: 200px;
+      margin-left: 250px;
       justify-content: flex-start;
       text-align: left;
       margin-top: 100px;
