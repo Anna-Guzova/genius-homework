@@ -14,6 +14,7 @@
     gap: 24px;
     justify-content: center;
     flex-direction: column-reverse;
+    margin-top: 24px;
 
     @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
@@ -27,24 +28,23 @@
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     padding: 0;
+    height: 232px;
 
     @media screen and (min-width: $bp-desktop) {
       width: 605px;
       height: 480px;
       border-radius: 32px;
+      margin-left: 0;
     }
   }
 
   &__form {
     padding: 42px 24px;
-    max-width: 320px;
-    max-height: 430px;
     width: 100%;
     height: 100%;
     background-color: var(--beauty-landing-2-c1);
     background-image: url('../imagers/background-form.png');
     border-radius: 48px;
-    // overflow: auto;
     color: var(--beauty-landing-2-background);
     margin: 0 auto;
 

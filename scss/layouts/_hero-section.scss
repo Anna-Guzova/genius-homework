@@ -12,7 +12,7 @@
     ),
     url(../imagers/background.png);
   background-size: cover;
-  background-position: center top;
+  background-position: 75% center;
   background-repeat: no-repeat;
   margin: 0;
   overflow: hidden;
@@ -57,11 +57,16 @@
 
     @media screen and (min-width: $bp-desktop) {
       width: 530px;
-      margin-left: 250px;
+      margin-left: 106px;
       justify-content: flex-start;
       text-align: left;
-      margin-top: 100px;
+      // margin-top: 100px;
       align-items: flex-start;
+
+      position: absolute;
+      top: 45%; /* 50% висоти контейнера */
+      left: 10%; /* відступ від лівого краю */
+      transform: translateY(-50%); /* центрує вертикально */
     }
   }
 
@@ -100,11 +105,13 @@
     width: 238px;
     height: 103px;
     margin: 0 auto;
+    align-items: center;
     justify-content: center;
 
     @media screen and (min-width: $bp-desktop) {
       gap: 14px;
       margin: 0;
+      align-items: flex-start;
     }
   }
 }
