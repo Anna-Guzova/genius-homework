@@ -60,4 +60,12 @@
   &__modal-field {
     margin-bottom: 16px;
   }
+
+  &__form-text {
+    font-size: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+    }
+  }
 }

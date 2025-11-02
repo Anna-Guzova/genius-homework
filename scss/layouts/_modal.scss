@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .backdrop.is-hidden {
@@ -19,6 +20,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+  margin: 10px;
   padding: 42px 24px;
   background-color: var(--beauty-landing-2-c1);
   background-image: url('../imagers/background-form.png');
@@ -36,19 +38,23 @@
 
   &__title {
     color: var(--beauty-landing-2-background);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 40px;
 
     @media screen and (min-width: $bp-desktop) {
       font-size: 64px;
+      margin-bottom: 40px;
     }
   }
 
   &__text {
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 24px;
-    width: 274px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+    }
 
     @media screen and (min-width: $bp-desktop) {
       margin-bottom: 32px;
@@ -58,9 +64,8 @@
 
   &__btn-close {
     position: absolute;
-    top: 50px;
-    right: 50px;
-    padding: 20px 6px;
+    top: 20px;
+    right: 20px;
     border-radius: 4px;
     font-weight: 500;
     font-family: Roboto;
@@ -69,11 +74,20 @@
     stroke: var(--beauty-landing-2-background);
     border: none;
     cursor: pointer;
+
+    @media screen and (min-width: $bp-desktop) {
+      top: 50px;
+      right: 50px;
+    }
   }
 
   &__svg {
-    position: absolute;
-    top: 5px;
-    right: 10px;
+    width: 25px;
+    height: 25px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
