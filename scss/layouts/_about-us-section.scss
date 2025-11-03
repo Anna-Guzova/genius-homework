@@ -1,5 +1,6 @@
 .about-us-section {
   font-size: 22px;
+  margin-top: 0;
 
   &__container {
     display: block;
@@ -13,11 +14,9 @@
 
   &__text {
     display: flex;
-
     flex-direction: column;
     gap: 16px;
     font-size: 18px;
-    // max-width: 320px;
 
     @media screen and (min-width: $bp-desktop) {
       font-size: 22px;
